@@ -1,9 +1,11 @@
 <h1> DON'T PRESS THE BUTTON SITE </h1>
-<form>
-  <label for="fname">Your name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
   <input type="submit" value="Submit">
-</form>
+</form> 
+<hr>
 <p> All you have to do is not press the button- are you ready?</p>
 <hr>
+<button type="button" onclick="alert(document.getElementById('fname').value)">dont press</button>
 <button type="button" onclick="alert('Goddammit'+fname)">Don't Press!</button>
